@@ -1,0 +1,24 @@
+{
+  "name": "mhmfajar/laravel-payment-orchestrator",
+  "description": "Laravel adapter for PHP Payment Orchestrator.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Mhmfajar\\PaymentOrchestratorLaravel\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^7.3 || ^8.0",
+    "mhmfajar/php-payment-orchestrator": "^0.1",
+    "illuminate/support": "^8.0 || ^9.0 || ^10.0",
+    "illuminate/database": "^8.0 || ^9.0 || ^10.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Mhmfajar\\PaymentOrchestratorLaravel\\PaymentServiceProvider"
+      ]
+    }
+  }
+}
